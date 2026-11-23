@@ -13,18 +13,16 @@
     });
   }
 
-  /* 2) 제작 사례: 품목 버튼을 누르면 해당 품목만 보이기 */
-  var filterButtons = document.querySelectorAll('.filters button');
-  var tiles = document.querySelectorAll('.gallery figure');
-  filterButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var cat = btn.getAttribute('data-cat');
-      filterButtons.forEach(function (b) {
-        b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
-      });
-      tiles.forEach(function (t) {
-        t.hidden = !(cat === 'all' || t.getAttribute('data-cat') === cat);
-      });
+  /* 2) 제작 사례: 품목 버튼을 누르면 해당 품목만 보이기 (관리자에서 사례를 바꿔도 동작하도록 누를 때마다 다시 찾음) */
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest && e.target.closest('.filters button');
+    if (!btn) return;
+    var cat = btn.getAttribute('data-cat');
+    document.querySelectorAll('.filters button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+    document.querySelectorAll('.gallery figure').forEach(function (t) {
+      t.hidden = !(cat === 'all' || t.getAttribute('data-cat') === cat);
     });
   });
 

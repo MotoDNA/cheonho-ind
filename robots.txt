@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin.html
 
 # 네이버 / 구글 / AI 검색
 User-agent: Yeti

@@ -344,3 +344,13 @@ button,input,select,textarea{font:inherit;color:inherit}
   .photo-pair{grid-template-columns:1fr}
   .cta-sub .btn,.map-btns .btn{width:100%}
 }
+
+/* ── 관리자 페이지 연결 ── */
+/* 최신 내용을 받기 전에는 고칠 수 있는 곳을 잠깐 숨김 (예전 문구가 깜빡이지 않게) */
+html.cwait [data-t], html.cwait [data-img], html.cwait #works-gallery{visibility:hidden}
+/* 관리자에서 올린 사진 */
+.ph-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.has-img{background:#e2e0d9!important;box-shadow:none!important}
+.has-img::before,.has-img::after{display:none!important}
+.has-img > span{display:none}
+.tile{overflow:hidden}

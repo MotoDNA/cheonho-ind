@@ -1,0 +1,91 @@
+{
+ "version": 1,
+ "texts": {},
+ "images": {},
+ "works": [
+  {
+   "cat": "diary",
+   "name": "다이어리 표지",
+   "spec": "유색 PVC · 금박",
+   "img": "",
+   "color": "c-navy"
+  },
+  {
+   "cat": "diary",
+   "name": "수첩 커버",
+   "spec": "레자 · 형압",
+   "img": "",
+   "color": "c-brown"
+  },
+  {
+   "cat": "binder",
+   "name": "링바인더",
+   "spec": "합지+PVC · 실크 인쇄",
+   "img": "",
+   "color": "c-black"
+  },
+  {
+   "cat": "clear",
+   "name": "책 커버",
+   "spec": "투명 PVC",
+   "img": "",
+   "color": "c-clear"
+  },
+  {
+   "cat": "case",
+   "name": "여권 케이스",
+   "spec": "반투명 PVC",
+   "img": "",
+   "color": "c-grey"
+  },
+  {
+   "cat": "etc",
+   "name": "상장 케이스",
+   "spec": "레자 · 금박",
+   "img": "",
+   "color": "c-wine"
+  },
+  {
+   "cat": "etc",
+   "name": "메뉴판",
+   "spec": "유색 PVC",
+   "img": "",
+   "color": "c-green"
+  },
+  {
+   "cat": "binder",
+   "name": "결재판",
+   "spec": "합지+PVC",
+   "img": "",
+   "color": "c-navy"
+  },
+  {
+   "cat": "case",
+   "name": "통장 케이스",
+   "spec": "투명 PVC",
+   "img": "",
+   "color": "c-clear"
+  },
+  {
+   "cat": "etc",
+   "name": "앨범 표지",
+   "spec": "쿠션 표지",
+   "img": "",
+   "color": "c-ochre"
+  },
+  {
+   "cat": "case",
+   "name": "명찰 케이스",
+   "spec": "투명 PVC",
+   "img": "",
+   "color": "c-clear"
+  },
+  {
+   "cat": "etc",
+   "name": "포켓 가공",
+   "spec": "투명 PVC",
+   "img": "",
+   "color": "c-grey"
+  }
+ ]
+}
