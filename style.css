@@ -354,3 +354,9 @@ html.cwait [data-t], html.cwait [data-img], html.cwait #works-gallery{visibility
 .has-img::before,.has-img::after{display:none!important}
 .has-img > span{display:none}
 .tile{overflow:hidden}
+/* 실제 운영용: 사진이 없는 설비 사진 칸은 숨기고 표만 보여줌 */
+.tbd{border-bottom:0}
+.about-photo{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:47% 50%;background:var(--fpo)}
+.photo-pair:not(:has(.has-img)){display:none}
+.split.even:has(> .photo-pair:not(:has(.has-img))){grid-template-columns:1fr;max-width:760px}
+@media (max-width:760px){.about-photo{aspect-ratio:4/3}}

@@ -63,7 +63,7 @@
       var color = w.color || COLORS[i % COLORS.length];
       var inner = w.img
         ? '<img class="ph-img" src="' + esc(photoUrl(w.img, 1200)) + '" alt="' + esc(w.name || '제작 사례') + '" loading="lazy">'
-        : '<span>사진 준비 중</span>';
+        : '';
       return '<figure data-cat="' + esc(w.cat || 'etc') + '"' + (cat !== 'all' && w.cat !== cat ? ' hidden' : '') + '>' +
         '<div class="tile ' + (w.img ? 'has-img' : esc(color)) + '" role="img" aria-label="' + esc(w.name || '') + ' 사례 사진">' + inner + '</div>' +
         '<figcaption><b>' + esc(w.name || '') + '</b><span>' + esc(w.spec || '') + '</span></figcaption></figure>';
